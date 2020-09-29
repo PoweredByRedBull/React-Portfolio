@@ -1,0 +1,417 @@
+@import url(../components/GeneralSettings.css);
+
+/* ------------------------------------ 4K ------------------------------------ */
+.navbar {
+  display: flex;
+  background-color: var(--main-color);
+  font-size: 3rem;
+  position: sticky;
+  height: 160px;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+}
+
+.navbar-logo {
+  display: flex;
+  justify-self: start;
+  align-items: center;
+  color: var(--secondary-color);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 5rem;
+}
+
+/* Logo on the left  */
+.fa-typo3 {
+  margin-left: 0.6rem;
+  font-size: 5rem;
+}
+/* Menu with main links  */
+.nav-menu {
+  display: grid;
+  justify-content: end;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 80vw;
+  margin-right: 2rem;
+}
+
+/* Hiding hamburger menu when resolution is less than 960px */
+.menu-icon {
+  display: none;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+/* Links on the right */
+.nav-links {
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+}
+
+.nav-links:hover {
+  background: var(--secondary-color);
+  color: var(--main-color);
+  border-radius: 10px;
+}
+/* ------------------------------------ QHD ------------------------------------ */
+@media screen and (max-width: 2560px) {
+  .navbar {
+    display: flex;
+    background-color: var(--main-color);
+    font-size: 2rem;
+    position: sticky;
+    height: 100px;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+
+  .navbar-logo {
+    display: flex;
+    justify-self: start;
+    align-items: center;
+    color: var(--secondary-color);
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 3.335rem;
+  }
+
+  /* Logo on the left  */
+  .fa-typo3 {
+    margin-left: 0.4rem;
+    font-size: 3.335rem;
+  }
+  /* Menu with main links  */
+  .nav-menu {
+    display: grid;
+    justify-content: end;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 6.67px;
+    list-style: none;
+    text-align: center;
+    width: 80vw;
+    margin-right: 1.334rem;
+  }
+
+  /* Hiding hamburger menu when resolution is less than 960px */
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    display: none;
+  }
+
+  /* Links on the right */
+  .nav-links {
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.667rem 1.66rem;
+  }
+
+  .nav-links:hover {
+    background: var(--secondary-color);
+    color: var(--main-color);
+    border-radius: 10px;
+  }
+}
+/* ------------------------------------ FHD ------------------------------------ */
+@media screen and (max-width: 1920px) {
+  .navbar {
+    display: flex;
+    background-color: var(--main-color);
+    font-size: 1.5rem;
+    position: sticky;
+    height: 80px;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+  }
+
+  .navbar-logo {
+    display: flex;
+    justify-self: start;
+    align-items: center;
+    color: var(--secondary-color);
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2.5rem;
+  }
+
+  /* Logo on the left  */
+  .fa-typo3 {
+    margin-left: 0.3rem;
+    font-size: 2.5rem;
+  }
+  /* Menu with main links  */
+  .nav-menu {
+    display: grid;
+    justify-content: end;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 5px;
+    list-style: none;
+    text-align: center;
+    width: 80vw;
+    margin-right: 1rem;
+  }
+
+  /* Hiding hamburger menu when resolution is less than 960px */
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    display: none;
+  }
+
+  /* Links on the right */
+  .nav-links {
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1.25rem;
+  }
+
+  .nav-links:hover {
+    background: var(--secondary-color);
+    color: var(--main-color);
+    border-radius: 10px;
+  }
+}
+/* ------------------------------------ HD ------------------------------------ */
+@media screen and (max-width: 1366px) {
+  .navbar {
+    display: flex;
+    background-color: var(--main-color);
+    font-size: 1.07rem;
+    position: sticky;
+    height: 80px;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+  }
+
+  .navbar-logo {
+    display: flex;
+    justify-self: start;
+    align-items: center;
+    color: var(--secondary-color);
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.785rem;
+  }
+
+  /* Logo on the left  */
+  .fa-typo3 {
+    margin-left: 0.21rem;
+    font-size: 1.785rem;
+  }
+  /* Menu with main links  */
+  .nav-menu {
+    display: grid;
+    justify-content: end;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 3.57px;
+    list-style: none;
+    text-align: center;
+    width: 80vw;
+    margin-right: 0.714rem;
+  }
+
+  /* Hiding hamburger menu when resolution is less than 960px */
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    display: none;
+  }
+
+  /* Links on the right */
+  .nav-links {
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.357rem 0.892rem;
+  }
+
+  .nav-links:hover {
+    background: var(--secondary-color);
+    color: var(--main-color);
+    border-radius: 10px;
+  }
+}
+/* ------------------------------------ XGA ------------------------------------ */
+@media screen and (max-width: 1024px) {
+  .NavbarItems {
+    position: relative;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  /* Openned mobile menu */
+  .nav-menu.active {
+    background: var(--main-color);
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    left: 0;
+    display: table;
+  }
+
+  .nav-links:hover {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    border-radius: 0;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+  }
+
+  .menu-icon {
+    color: var(--secondary-color);
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: var(--secondary-color);
+    font-size: 2rem;
+  }
+}
+
+/* ------------------------------------ WVGA ------------------------------------ */
+@media screen and (max-width: 768px) {
+  .NavbarItems {
+    position: relative;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  /* Openned mobile menu */
+  .nav-menu.active {
+    background: var(--main-color);
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    left: 0;
+    display: table;
+  }
+
+  .nav-links:hover {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    border-radius: 0;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+  }
+
+  .menu-icon {
+    color: var(--secondary-color);
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: var(--secondary-color);
+    font-size: 2rem;
+  }
+}
