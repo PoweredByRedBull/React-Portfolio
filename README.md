@@ -1,6 +1,5 @@
 /* ------------ GENERAL SETTINGS ------------ */
 /* Initial proportions scaled up to 4K, and being resized accordingly to the settings below */
-:root {
   /* Colors */
   --main-color: #000000;
   --secondary-color: #ff8c00;
@@ -11,4 +10,3 @@
   --FHD-multiplier: 0.5; /* 1920px */
   --QHD-multiplier: 0.667; /* 2560px */
   --UHDTV-multiplier: 1; /* 3840px (4K) */
-}
