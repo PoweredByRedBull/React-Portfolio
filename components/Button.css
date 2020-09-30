@@ -1,0 +1,43 @@
+@import url(../components/GeneralSettings.css);
+
+/* ------------------------------------ BUTTON DESIGNS ------------------------------------*/
+.btn-primary {
+  background: var(--secondary-color);
+  color: var(--main-color);
+}
+
+/* ------------------------------------ BUTTON SIZES ------------------------------------ */
+/* ----------------------------------------- 4K ----------------------------------------- */
+.btn {
+  padding: 1.5rem 2.2rem;
+  border-radius: 10px;
+  font-size: 2.2rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--additional-color);
+}
+/* ----------------------------------------- QHD ----------------------------------------- */
+@media screen and (max-width: 2560px) {
+  .btn {
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+  }
+}
+/* ----------------------------------------- FHD ----------------------------------------- */
+@media screen and (max-width: 1920px) {
+  .btn {
+    padding: 0.75rem 1.25rem;
+    font-size: 1.25rem;
+  }
+}
+/* ----------------------------------------- HD ------------------------------------------ */
+@media screen and (max-width: 1024px) {
+  .btn {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+  }
+}
