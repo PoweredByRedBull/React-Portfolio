@@ -4,9 +4,9 @@
 .navbar {
   display: flex;
   background-color: var(--main-color);
-  font-size: 3rem;
+  font-size: 2.15rem;
   position: sticky;
-  height: 160px;
+  height: 110px;
   max-width: 100%;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 160px;
+  height: 110px;
 }
 
 .navbar-logo {
@@ -27,24 +27,24 @@
   color: var(--secondary-color);
   cursor: pointer;
   text-decoration: none;
-  font-size: 5rem;
+  font-size: 3.75rem;
 }
 
 /* Logo on the left  */
 .fa-typo3 {
-  margin-left: 0.6rem;
-  font-size: 5rem;
+  margin-left: 0.5rem;
+  font-size: 3.75rem;
 }
 /* Menu with main links  */
 .nav-menu {
   display: grid;
   justify-content: end;
-  grid-template-columns: repeat(3, auto);
-  grid-gap: 10px;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 8px;
   list-style: none;
   text-align: center;
   width: 80vw;
-  margin-right: 2rem;
+  margin-right: 1.35rem;
 }
 
 /* Hiding hamburger menu when resolution is less than 1024px */
@@ -62,7 +62,7 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 1rem 2.5rem;
+  padding: 0.7rem 2rem;
 }
 
 .nav-links:hover {
@@ -73,94 +73,64 @@
 /* ------------------------------------ QHD ------------------------------------ */
 @media screen and (max-width: 2560px) {
   .navbar {
-    font-size: 2rem;
-    height: 100px;
+    font-size: 1.6rem;
+    height: 80px;
   }
 
   .navbar-container {
-    height: 100px;
+    height: 80px;
   }
 
   .navbar-logo {
-    font-size: 3.335rem;
+    font-size: 2.8rem;
   }
 
   .fa-typo3 {
     margin-left: 0.4rem;
-    font-size: 3.335rem;
+    font-size: 2.8rem;
   }
   /* Menu with main links  */
   .nav-menu {
-    grid-gap: 6.67px;
-    margin-right: 1.334rem;
+    grid-gap: 6px;
+    margin-right: 1rem;
   }
 
   .nav-links {
-    padding: 0.667rem 1.66rem;
+    padding: 0.5rem 1.5rem;
   }
 }
 /* ------------------------------------ FHD ------------------------------------ */
 @media screen and (max-width: 1920px) {
   .navbar {
-    font-size: 1.5rem;
-    height: 80px;
+    font-size: 1.2rem;
+    height: 60px;
   }
 
   .navbar-container {
-    height: 80px;
+    height: 60px;
   }
 
   .navbar-logo {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
   }
 
   .fa-typo3 {
     margin-left: 0.3rem;
-    font-size: 2.5rem;
+    font-size: 1.875rem;
   }
   /* Menu with main links  */
   .nav-menu {
-    grid-gap: 5px;
-    margin-right: 1rem;
+    grid-gap: 4.5px;
+    margin-right: 0.75rem;
   }
 
   .nav-links {
-    padding: 0.5rem 1.25rem;
+    padding: 0.375rem 1.125rem;
   }
 }
-/* ------------------------------------ HD ------------------------------------ */
-@media screen and (max-width: 1366px) {
-  .navbar {
-    font-size: 1.07rem;
-    height: 80px;
-  }
 
-  .navbar-container {
-    height: 80px;
-  }
-
-  .navbar-logo {
-    font-size: 1.785rem;
-  }
-
-  /* Logo on the left  */
-  .fa-typo3 {
-    margin-left: 0.21rem;
-    font-size: 1.785rem;
-  }
-  /* Menu with main links  */
-  .nav-menu {
-    grid-gap: 3.57px;
-    margin-right: 0.714rem;
-  }
-
-  /* Links on the right */
-  .nav-links {
-    padding: 0.357rem 0.892rem;
-  }
-}
-/* ------------------------------------ XGA ------------------------------------ */
-@media screen and (max-width: 1024px) {
+/* ------------------------------------ WVGA ------------------------------------ */
+@media screen and (max-width: 960px) {
   .NavbarItems {
     position: relative;
   }
@@ -168,10 +138,9 @@
   .nav-menu {
     display: flex;
     flex-direction: column;
+    top: 60px;
     width: 100%;
-    height: 100vh;
     position: absolute;
-    top: 80px;
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
@@ -182,8 +151,10 @@
     background: var(--main-color);
     left: 0;
     opacity: 1;
+    height: 110vh;
     transition: all 0.5s ease;
     z-index: 1;
+    top: 60;
   }
 
   .nav-links {
@@ -204,7 +175,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(25%, 50%);
+    transform: translate(15%, 25%);
   }
 
   .menu-icon {
@@ -213,8 +184,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
+    transform: translate(-100%, 30%);
+    font-size: 1.4rem;
     cursor: pointer;
   }
 
