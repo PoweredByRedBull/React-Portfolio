@@ -47,7 +47,7 @@
   margin-right: 1.35rem;
 }
 
-/* Hiding hamburger menu when resolution is less than 1024px */
+/* Hiding hamburger menu when resolution is less than 960px */
 .menu-icon {
   display: none;
 }
