@@ -1,165 +1,32 @@
-@import url(../components/GeneralSettings.css);
-
-/* ------------------------------------ 4K ------------------------------------ */
 .hero-container {
-  background: url("../img/background1.jpg") center center/cover no-repeat;
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  background: url("../img/background-2.jpg") center center/cover no-repeat;
   height: 100vh;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-  object-fit: contain;
+  opacity: 0.8;
 }
 
 .hero-container > h1 {
-  color: var(--secondary-color);
-  font-size: 6rem;
-  margin-top: -1800px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  opacity: 1;
+  font-size: 3rem;
 }
 
 .hero-container > p {
-  margin-top: 8px;
-  color: var(--secondary-color);
-  font-size: 3.8rem;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.25rem;
+  font-size: 1.5rem;
 }
 
 .hero-btns {
-  margin-top: 25px;
-}
-
-@media screen and (max-width: 3000px) {
-  .hero-container > h1 {
-    margin-top: -1200px;
-  }
-}
-/* ------------------------------------ QHD ------------------------------------ */
-@media screen and (max-width: 2560px) {
-  .hero-container > h1 {
-    font-size: 4rem;
-    margin-top: -500px;
-  }
-
-  .hero-container > p {
-    margin-top: 5.25px;
-    font-size: 2.5rem;
-  }
-
-  .hero-btns {
-    margin-top: 16.5px;
-  }
-}
-/* ------------------------------------ FHD ------------------------------------ */
-@media screen and (max-width: 1920px) {
-  .hero-container > h1 {
-    font-size: 3rem;
-    margin-top: -470px;
-  }
-
-  .hero-container > p {
-    margin-top: 4px;
-    font-size: 1.875rem;
-  }
-
-  .hero-btns {
-    margin-top: 12.5px;
-  }
-}
-/* ------------------------------------ HD ------------------------------------ */
-@media screen and (max-width: 1366px) {
-  .hero-container > h1 {
-    font-size: 2.5rem;
-    margin-top: -420px;
-  }
-
-  .hero-container > p {
-    margin-top: 2.8px;
-    font-size: 1.5rem;
-  }
-
-  .hero-btns {
-    margin-top: 12.5px;
-  }
-}
-
-/* ------------------------------------ Mobile ------------------------------------ */
-@media screen and (max-width: 1024px) {
-  .hero-container > h1 {
-    font-size: 2rem;
-    margin-top: -420px;
-  }
-
-  .hero-container > p {
-    margin-top: 2.3px;
-    font-size: 1.35rem;
-  }
-
-  .hero-btns {
-    margin-top: 10px;
-  }
-}
-
-@media screen and (max-width: 823px) {
-  .hero-container > h1 {
-    margin-top: -80px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .hero-container > h1 {
-    font-size: 1.85rem;
-    margin-top: -75px;
-  }
-
-  .hero-container > p {
-    margin-top: 5px;
-    font-size: 1.2rem;
-  }
-
-  .hero-btns {
-    margin-top: 5px;
-  }
-}
-
-@media screen and (max-width: 667px) {
-  .hero-container > h1 {
-    margin-top: -80px;
-  }
-  .hero-container > h1 {
-    margin-top: -75px;
-  }
-
-  .hero-container > p {
-    margin-top: 5px;
-  }
-
-  .hero-btns {
-    margin-top: 5px;
-  }
-}
-
-/* ------------------------------ EXTRA ---------------------- */
-@media screen and (max-height: 700px) {
-  .hero-container > h1 {
-    margin-top: -80px;
-  }
-  .hero-container > h1 {
-    font-size: 2rem;
-    margin-top: -75px;
-  }
-
-  .hero-container > p {
-    margin-top: 5px;
-    font-size: 1.5rem;
-  }
-
-  .hero-btns {
-    margin-top: 5px;
-  }
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
 }
