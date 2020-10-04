@@ -1,196 +1,60 @@
-@import url(../components/GeneralSettings.css);
-
-/* ------------------------------------ 4K ------------------------------------ */
 .navbar {
   display: flex;
-  background-color: var(--main-color);
-  font-size: 2.15rem;
-  position: sticky;
-  height: 110px;
-  max-width: 100%;
   justify-content: center;
-  align-items: center;
+  background: #000;
+  height: 80px;
+  top: 0;
+  position: sticky;
   z-index: 1;
 }
 
 .navbar-container {
   display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  list-style: none;
+  width: 1920px;
+}
+
+.navbar-logo-text {
+  color: white;
+  font-size: 2.25rem;
+  display: flex;
   justify-content: center;
   align-items: center;
-  height: 110px;
-}
-
-.navbar-logo {
-  display: flex;
-  justify-self: start;
-  align-items: center;
-  color: var(--secondary-color);
-  cursor: pointer;
   text-decoration: none;
-  font-size: 3.75rem;
+  padding: 0 20px;
 }
 
-/* Logo on the left  */
+.nav-item {
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  margin-top: 20px;
+  margin-right: 5px;
+  padding: 10px;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  border-radius: 10px;
+  background: #393939;
+}
+
 .fa-typo3 {
-  margin-left: 0.5rem;
-  font-size: 3.75rem;
-}
-/* Menu with main links  */
-.nav-menu {
-  display: grid;
-  justify-content: end;
-  grid-template-columns: repeat(5, auto);
-  grid-gap: 8px;
-  list-style: none;
-  text-align: center;
-  width: 80vw;
-  margin-right: 1.35rem;
+  margin-left: 0.3rem;
+  font-size: 2.25rem;
 }
 
-/* Hiding hamburger menu when resolution is less than 960px */
+/* Hamburger menu */
 .menu-icon {
   display: none;
 }
 
-.nav-links-mobile {
-  display: none;
-}
-
-/* Links on the right */
-.nav-links {
-  color: var(--secondary-color);
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 0.7rem 2rem;
-}
-
-.nav-links:hover {
-  background: var(--secondary-color);
-  color: var(--main-color);
-  border-radius: 10px;
-}
-/* ------------------------------------ QHD ------------------------------------ */
-@media screen and (max-width: 2560px) {
-  .navbar {
-    font-size: 1.6rem;
-    height: 80px;
-  }
-
-  .navbar-container {
-    height: 80px;
-  }
-
-  .navbar-logo {
-    font-size: 2.8rem;
-  }
-
-  .fa-typo3 {
-    margin-left: 0.4rem;
-    font-size: 2.8rem;
-  }
-  /* Menu with main links  */
-  .nav-menu {
-    grid-gap: 6px;
-    margin-right: 1rem;
-  }
-
-  .nav-links {
-    padding: 0.5rem 1.5rem;
-  }
-}
-/* ------------------------------------ FHD ------------------------------------ */
-@media screen and (max-width: 1920px) {
-  .navbar {
-    font-size: 1.2rem;
-    height: 60px;
-  }
-
-  .navbar-container {
-    height: 60px;
-  }
-
-  .navbar-logo {
-    font-size: 2.1rem;
-  }
-
-  .fa-typo3 {
-    margin-left: 0.3rem;
-    font-size: 1.875rem;
-  }
-  /* Menu with main links  */
-  .nav-menu {
-    grid-gap: 4.5px;
-    margin-right: 0.75rem;
-  }
-
-  .nav-links {
-    padding: 0.375rem 1.125rem;
-  }
-}
-
-/* ------------------------------------ WVGA ------------------------------------ */
 @media screen and (max-width: 960px) {
-  .NavbarItems {
-    position: relative;
-  }
-
-  .nav-menu {
-    display: flex;
-    flex-direction: column;
-    top: 60px;
-    width: 100%;
-    position: absolute;
-    left: -100%;
-    opacity: 1;
-    transition: all 0.5s ease;
-  }
-
-  /* Openned mobile menu */
-  .nav-menu.active {
-    background: var(--main-color);
-    left: 0;
-    opacity: 1;
-    height: 110vh;
-    transition: all 0.5s ease;
-    z-index: 1;
-    top: 60;
-  }
-
-  .nav-links {
-    text-align: center;
-    padding: 2rem;
-    width: 100%;
-    left: 0;
-    display: table;
-  }
-
-  .nav-links:hover {
-    background-color: var(--secondary-color);
-    color: var(--main-color);
-    border-radius: 0;
-  }
-
-  .navbar-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(15%, 25%);
-  }
-
-  .menu-icon {
-    color: var(--secondary-color);
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 30%);
-    font-size: 1.4rem;
-    cursor: pointer;
-  }
-
-  .fa-times {
-    color: var(--secondary-color);
-    font-size: 2rem;
-  }
 }
